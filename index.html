@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            Rammfall Music
+        </div>
+    </header>
+
+    <div class="player">
+        <input type="range" step="any" value="0" class="range-timeline">
+
+        <div class="player__container">
+            <audio src="audio/audio_billie.mp3"></audio>
+            <div class="controls">
+                <button class="player__btn">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="none play">
+                        <g class="style-scope tp-yt-iron-icon">
+                            <path fill="#ffffff" d="M8 5v14l11-7z" class="style-scope tp-yt-iron-icon"></path>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="none pause">
+                        <g class="style-scope tp-yt-iron-icon">
+                            <path fill="#ffffff" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
+                                  class="style-scope tp-yt-iron-icon"></path>
+                        </g>
+                    </svg>
+                </button>
+                <div class="timeline">
+                    <span class="timeline__current">
+                        00:00
+                    </span>
+                    /
+                    <span class="timeline__all">
+                        0:00
+                    </span>
+                </div>
+            </div>
+
+            <div class="meta">
+                <img class="meta__image"
+                     src="https://lh3.googleusercontent.com/pWO2rD8Q-ewDGhzt6_WU4ML9IVEdSxys8ENJMKr1msKrGC1PDIFycSNbwhoT9zoDdTp4X7ioo2T42S0=w60-h60-l90-rj"
+                     alt="">
+                <div class="meta__name">
+                    Billie Bossa Nova
+                </div>
+                <div class="meta__artist">
+                    Billie Eilish
+                </div>
+                <div class="meta__album">
+                    Happier Than Ever
+                </div>
+                <div class="meta__year">
+                    2021
+                </div>
+            </div>
+
+            <div class="sound">
+                <input type="range" class="sound__input">
+                <button class="sound__btn">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="none volume">
+                        <g class="style-scope tp-yt-iron-icon">
+                            <path fill="#ffffff"
+                                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                                  class="style-scope tp-yt-iron-icon"></path>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="none mute">
+                        <g class="style-scope tp-yt-iron-icon">
+                            <path fill="#ffffff"
+                                  d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+                                  class="style-scope tp-yt-iron-icon"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js" type="module"></script>
+</body>
+</html>
